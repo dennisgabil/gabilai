@@ -1,0 +1,6 @@
+{
+  "name": "GABILAI — AI Solutions",
+  "description": "Next-generation AI solutions, exploring new frontiers and redefining industry standards with advanced AI algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
