@@ -130,35 +130,35 @@ export default function HeroSection({
           style={{
             transform: `perspective(1000px) rotateX(${mousePos.y * -8}deg) rotateY(${mousePos.x * 8}deg)`,
           }}
-          className="relative group w-full max-w-105 sm:max-w-120 aspect-square rounded-[36px] overflow-hidden p-1.5 transition-transform duration-200"
+          className="relative group w-full max-w-105 sm:max-w-120 p-1.5 transition-transform duration-200"
         >
           {/* Subtle Outer Neon Border Ribbon */}
-          <div className="absolute inset-0 rounded-[36px] bg-linear-to-tr from-cyan-400/40 via-purple-500/30 to-pink-500/40 blur-[1px]" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-tr from-cyan-400/40 via-purple-500/30 to-pink-500/40 blur-[1px]" />
 
           {/* Inner Content Card with vignette blending */}
-          <div className="relative w-full h-full rounded-4xl overflow-hidden bg-[#0d0d1e] shadow-2xl shadow-cyan-950/50">
+          <div className="relative w-full h-full rounded-full overflow-hidden bg-[#0d0d1e] shadow-2xl shadow-cyan-950/50">
             <img
               src={heroPortrait}
               alt="GABILAI Ethereal Digital Intelligence Artwork"
               referrerPolicy="no-referrer"
-              className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
+              className="w-full h-full rounded-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
             />
 
             {/* Radial dark vignette around edges to blend naturally with the page */}
             <div className="absolute inset-0 bg-radial from-transparent via-[#070714]/20 to-[#070714]/70 pointer-events-none" />
 
             {/* Floating Live Indicator Badge */}
-            <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between p-3 rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 text-xs">
+            <div className="absolute bottom-5 left-1/2 right-auto flex w-max -translate-x-1/2 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-black/40 p-3 text-xs backdrop-blur-xl">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-teal-400 animate-ping" />
                 <span className="font-semibold text-neutral-200">
                   Neural Core Active
                 </span>
               </div>
-              <span className="font-mono text-cyan-300 text-[11px] flex items-center gap-1">
+              {/* <span className="font-mono text-cyan-300 text-[11px] flex items-center gap-1">
                 <Sparkles className="w-3 h-3 text-cyan-300" />
                 v4.8 Stable
-              </span>
+              </span> */}
             </div>
           </div>
         </motion.div>
