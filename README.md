@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="Gabil AI" src="/assets/images/gabilai.png" />
+<img width="1200" height="475" alt="Gabil AI" src="/src/assets/images/gabilai.png" />
 </div>
 
 # Run Locally
